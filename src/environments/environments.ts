@@ -7,7 +7,7 @@ export const environment = {
     SIGNALR_PUSHHUB_URL: 'https://test-signal.softrig.com/pushHub',
     base_url: 'https://test.softrig.com/api',
     authority: 'https://test-login.softrig.com',
-    client_id: '',
+    client_id: 'your ID',
     redirect_uri: 'http://localhost:4200',
     post_logout_redirect_uri: 'http://localhost:4200',
     silent_redirect_uri: 'http://localhost:4200/silent-renew.html',
