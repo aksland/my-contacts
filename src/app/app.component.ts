@@ -19,6 +19,9 @@ export class AppComponent {
   contacts: Contact[] = [];
 
   title = 'My contacts';
+  name: string = '';
+  email: string = '';
+  companyName: string = '';
   isAuth : boolean = false;
   isConfigOk : boolean = false;
 
@@ -28,9 +31,12 @@ export class AppComponent {
     if(environment.client_id.length > 10){
       this.isConfigOk = true;
     }
-    this.oidcSecurityService.checkAuth().subscribe(({ isAuthenticated }): void => {
+    this.oidcSecurityService.checkAuth().subscribe(({ isAuthenticated, userData }): void => {
       if(isAuthenticated){
         this.isAuth = true;
+        this.name = userData.name;
+        this.email = userData.email;
+        this.companyName = userData.companyName;
         this.getContacts();
       } 
     });

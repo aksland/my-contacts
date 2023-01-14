@@ -52,13 +52,13 @@
   </div>
 
   <!-- Resources -->
-  <h2>SoftRig Template & Resources</h2>
+  <br><br>
   <p>This is a sample APP to simplify authentication flow and getting started with SoftRig & Angular.</p>
   <div *ngIf="isConfigOk">
     <div class="card-container">
-      <button *ngIf="!isAuth" class="card card-small" (click)="login()" tabindex="0">
+      <button *ngIf="!isAuth" class="card card-small" (click)="login()" style="background-color: #2cb76c; color: white;" tabindex="0">
         <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
+          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" style="fill:white"/>
         </svg>
         <span>Login to SoftRig</span>
       </button>
@@ -68,9 +68,22 @@
         </svg>
         <span>Logout from SoftRig</span>
       </button>
-
     </div>
+    <br><br>
     <div *ngIf="isAuth">
+      <div style="flex-wrap: wrap; text-align: center;">
+        <h3>
+          Welcome {{ name }}!
+        </h3>
+        <div>
+          <span>Email: </span>
+          <span>{{ email }}</span>
+        </div>
+        <div>
+          <span>Company: </span>
+          <span>{{ companyName }}</span>
+        </div>
+      </div>
       <div class="card-container">
         <h3>My Contacts</h3>
       </div>
@@ -83,8 +96,8 @@
         </div>
       </div>
     </div>
-
   </div>
+  <br><br>
   <div *ngIf="!isConfigOk" class="card-container">
     <h3 style="color: red">Error: ClientID missing in envronment.ts file</h3>
     <span><b>To get started</b>, please add a SPA ClientID from your developer account -> <a
@@ -93,6 +106,8 @@
     <br><br>
     <hr>
   </div>
+  <h2>SoftRig Resources</h2>
+  <p>Here are some links to help you get started with SoftRig:</p>
   <div class="card-container">
     <a class="card" target="_blank" rel="noopener" href="https://developer.softrig.com/wiki/how-to/contacts">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -120,7 +135,7 @@
 
   <!-- Resources -->
   <h2>Angular Resources</h2>
-  <p>Here are some links to help you get started:</p>
+  <p>Here are some links to help you get started with angular:</p>
 
   <div class="card-container">
     <a class="card" target="_blank" rel="noopener" href="https://angular.io/tutorial">
