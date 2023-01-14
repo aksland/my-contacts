@@ -1,5 +1,7 @@
 # MyContacts
 
+This is a sample APP to simplify authentication flow and getting started with SoftRig & Angular.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
 
 ## Development server
