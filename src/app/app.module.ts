@@ -5,10 +5,16 @@ import { AuthModule, LogLevel, OidcSecurityService } from 'angular-auth-oidc-cli
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { environment } from '../environments/environments';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { AngularResourcesComponent } from './components/angular-resources/angular-resources.component';
+import { SoftrigResourcesComponent } from './components/softrig-resources/softrig-resources.component';
 
 @NgModule({  
   declarations: [
-    AppComponent
+    AppComponent,
+    NavbarComponent,
+    AngularResourcesComponent,
+    SoftrigResourcesComponent
   ],
   imports: [
     AuthModule.forRoot({
