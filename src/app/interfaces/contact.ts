@@ -1,6 +1,6 @@
 import { Info } from "./info"
 export interface Contact {
-  ID: number,
+	ID: number,
 	InfoID: number,
 	Info: Info,
 	Comment: string,
