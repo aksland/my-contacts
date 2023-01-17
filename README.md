@@ -2,6 +2,30 @@
 
 This is a sample APP to simplify authentication flow and getting started with SoftRig & Angular.
 
+Please add the clientID of you app in the environment file, 
+and you are ready to go. 
+
+PS! Make sure that you have the correct redirect url's set in the developer portal: 
+https://developer.softrig.com/manage-apps/apps
+
+```
+export const environment = {
+    production: false,
+    SIGNALR_PUSHHUB_URL: 'https://test-signal.softrig.com/pushHub',
+    base_url: 'https://test.softrig.com/api',
+    authority: 'https://test-login.softrig.com',
+    client_id: '',
+    redirect_uri: 'http://localhost:4200',
+    post_logout_redirect_uri: 'http://localhost:4200',
+    silent_redirect_uri: 'http://localhost:4200/silent-renew.html',
+    automaticSilentRenew: true,
+    response_type: 'code',
+    scope: 'openid profile AppFramework',
+    loadUserInfo: false,
+    filterProtocolClaims: true, // prevents protocol level claims such as nbf, iss, at_hash, and nonce from being extracted from the identity token as profile dataloadUserInfo: true
+  };
+```
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
 
 ## Development server
