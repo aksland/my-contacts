@@ -8,6 +8,12 @@ and you are ready to go.
 PS! Make sure that you have the correct redirect url's set in the developer portal: 
 https://developer.softrig.com/manage-apps/apps
 
+## Troubleshooter
+If you encounter error messages on sign in, you 
+can view a complete list in the diagnostics for your app: https://developer.softrig.com/manage-apps/diagnostics
+
+Here's a wiki doc on general troubleshooting: https://developer.softrig.com/wiki/how-to/troubleshooting
+
 Using the angular-auth-oidc-client lib https://www.npmjs.com/package/angular-auth-oidc-client
 
 ```
