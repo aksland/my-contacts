@@ -8,6 +8,8 @@ and you are ready to go.
 PS! Make sure that you have the correct redirect url's set in the developer portal: 
 https://developer.softrig.com/manage-apps/apps
 
+Using the angular-auth-oidc-client lib https://www.npmjs.com/package/angular-auth-oidc-client
+
 ```
 export const environment = {
     production: false,
@@ -25,6 +27,12 @@ export const environment = {
     filterProtocolClaims: true, // prevents protocol level claims such as nbf, iss, at_hash, and nonce from being extracted from the identity token as profile dataloadUserInfo: true
   };
 ```
+
+You will find the SoftRig Swagger for Contacts entity here: https://developer.softrig.com/api-docs/contact
+
+Wiki docs on how to use the Contacts API with expand, here: https://developer.softrig.com/wiki/how-to/contacts
+
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
 
